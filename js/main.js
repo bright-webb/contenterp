@@ -1,0 +1,3 @@
+const components = {};
+
+alert('hello')
