@@ -1831,7 +1831,7 @@ select{
 }
 .dropdown-menu .dropdown-content {
       transition: margin-top 0.2s;
-      box-shadow: 0px 3px 10px #00000017;
+      box-shadow: 0px 3px 10px #33333317;
       position: relative;
       margin-top: 1.25rem;
       width: 100%;
@@ -2311,7 +2311,7 @@ select{
 .modal {
     margin-top: -10000px;
     margin-left: -10000px;
-    background: #000000a6;
+    background: #333333a6;
     transition: visibility 0s linear 0.2s, opacity 0.2s 0s;
     visibility: hidden;
     position: fixed;
@@ -2322,7 +2322,7 @@ select{
     opacity: 0;
   }
 .modal.modal-overlap {
-      background: #000000a6;
+      background: #333333a6;
     }
 .modal.modal-static .modal-content {
         -webkit-animation: modal-static-backdrop 0.3s infinite;
@@ -2473,7 +2473,7 @@ select{
     display: flex;
 }
 .pagination .page-item.active .page-link {
-    box-shadow: 0px 3px 20px #0000000b;
+    box-shadow: 0px 3px 20px #3333330b;
     position: relative;
     border-radius: 0.375rem;
     border-color: transparent;
@@ -2642,7 +2642,7 @@ select{
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .nav.nav-boxed-tabs .nav-item .nav-link {
-          box-shadow: 0px 3px 20px #0000000b;
+          box-shadow: 0px 3px 20px #3333330b;
           border-radius: 0.375rem;
         }
 .nav.nav-boxed-tabs .nav-item .nav-link.active{
@@ -2747,7 +2747,7 @@ select{
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .box {
-    box-shadow: 0px 3px 20px #0000000b;
+    box-shadow: 0px 3px 20px #3333330b;
     position: relative;
     border-radius: 0.375rem;
     border-color: transparent;
@@ -10087,7 +10087,7 @@ html body{
     background-color: rgb(var(--color-darkmode-600) / var(--tw-bg-opacity));
 }
 .table-report:not(.table-report--bordered):not(.table-report--tabulator) td {
-            box-shadow: 20px 3px 20px #0000000b;
+            box-shadow: 20px 3px 20px #3333330b;
         }
 .table-report:not(.table-report--bordered):not(.table-report--tabulator) td:first-child{
     border-top-left-radius: 0.375rem;
@@ -10254,7 +10254,7 @@ html body{
 .report-box:before {
         content: "";
         width: 90%;
-        box-shadow: 0px 3px 20px #0000000b;
+        box-shadow: 0px 3px 20px #3333330b;
         position: absolute;
         left: 0px;
         right: 0px;
@@ -10294,7 +10294,7 @@ html body{
         content: "";
         width: 90%;
         background: #f9fafc;
-        box-shadow: 0px 3px 20px #0000000b;
+        box-shadow: 0px 3px 20px #3333330b;
         position: absolute;
         left: 0px;
         right: 0px;
@@ -10371,7 +10371,7 @@ html body{
                     animation-fill-mode: forwards;
             -webkit-animation-delay: 0.1s;
                     animation-delay: 0.1s;
-            box-shadow: 0px 3px 20px #0000000b;
+            box-shadow: 0px 3px 20px #3333330b;
             position: absolute;
             top: 0px;
             left: 0px;
@@ -10422,7 +10422,7 @@ html body{
                 animation-delay: 0.1s;
         margin-left: -22px;
         margin-right: -22px;
-        box-shadow: 0px 3px 20px #0000000b;
+        box-shadow: 0px 3px 20px #3333330b;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -12058,7 +12058,7 @@ html body{
 .top-nav > ul li ul {
                 left: 100%;
                 margin-left: -4px;
-                box-shadow: 0px 3px 20px #0000000b;
+                box-shadow: 0px 3px 20px #3333330b;
                 position: absolute;
                 top: 0px;
                 z-index: 20;
@@ -12171,7 +12171,7 @@ html body{
     background-color: rgb(var(--color-darkmode-600) / var(--tw-bg-opacity));
 }
 .dark .top-nav > ul ul {
-                box-shadow: 0px 3px 7px #0000001c;
+                box-shadow: 0px 3px 7px #3333331c;
             }
 .side-nav {
     width: 230px;
@@ -15776,7 +15776,7 @@ html body{
 }
 .search-result .search-result__content {
         transition: margin-top 0.2s;
-    box-shadow: 0px 3px 20px #0000000b;
+    box-shadow: 0px 3px 20px #3333330b;
     position: relative;
     border-radius: 0.375rem;
     border-color: transparent;
@@ -15861,7 +15861,7 @@ html body{
     line-height: 1.25rem;
     z-index: 999999 !important;
     margin-top: 7px;
-    box-shadow: 0px 3px 20px #00000014;
+    box-shadow: 0px 3px 20px #33333314;
 }
 @media (max-width: calc(1024px - 1px)) {
     .litepicker {
@@ -16283,7 +16283,7 @@ html body{
     margin-right: auto;
 }
 .dark .tippy-box {
-        box-shadow: 0 0 20px 4px #00000026, 0 4px 80px -8px #24282f40,
+        box-shadow: 0 0 20px 4px #33333326, 0 4px 80px -8px #24282f40,
             0 4px 4px -2px #5b5e6926;
     }
 .tabulator-print-fullscreen-hide:before {
