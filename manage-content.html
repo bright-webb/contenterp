@@ -64,7 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             
                         </li>
                         <li>
-                            <a href="javascript:;" class="menu">
+                            <a href="search.html" class="menu">
                                 <div class="side-menu__icon"> <i data-lucide="search"></i> </div>
                                 <div class="side-menu__title">
                                     Keyword Search
@@ -392,7 +392,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="side-nav__devider my-6"></div>
                     <ul>
                         <li>
-                            <a href="javascript:;.html" class="side-menu">
+                            <a href="dashboard.html" class="side-menu">
                                 <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
                                 <div class="side-menu__title">
                                     Dashboard 
@@ -412,7 +412,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             
                         </li>
                         <li>
-                            <a href="javascript:;" class="side-menu">
+                            <a href="search.html" class="side-menu">
                                 <div class="side-menu__icon"> <i data-lucide="search"></i> </div>
                                 <div class="side-menu__title">
                                     Keyword Search
@@ -421,12 +421,12 @@ License: You must have a valid license purchased only from themeforest(the above
                             </a>
                         </li>
                         <li>
-                            <a href="side-menu-light-inbox.html" class="side-menu side-menu--active">
+                            <a href="manage-content.html" class="side-menu side-menu--active">
                                 <div class="side-menu__icon"> <i data-lucide="file-text"></i> </div>
                                 <div class="side-menu__title"> Manage Content </div>
                             </a>
                         <li>
-                            <a href="side-menu-light-inbox.html" class="side-menu">
+                            <a href="articles.html" class="side-menu">
                                 <div class="side-menu__icon"> <i data-lucide="type"></i> </div>
                                 <div class="side-menu__title"> Articles </div>
                             </a>
@@ -543,7 +543,162 @@ License: You must have a valid license purchased only from themeforest(the above
                        
                     </div>
                     <div class="overflow-x-auto scrollbar-hidden">
-                        <div id="data-table"></div>
+                        <div class="overflow-x-auto">
+                            <table class="table table-bordered table-hover" id="data-table" style="padding-top: 50px;">
+                                <thead>
+                                    <tr>
+                                        <th class="whitespace-nowrap">Keyword Phrase</th>
+                                        <th class="whitespace-nowrap">Article Link</th>
+                                        <th class="whitespace-nowrap">Googlge Doc Link</th>
+                                        <th class="whitespace-nowrap">Assigned To</th>
+                                        <th class="whitespace-nowrap">Status</th>
+                                        <th class="whitespace-nowrap">Type</th>
+                                        <th class="whitespace-nowrap">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="whitespace-nowrap">Web Development</td>
+                                        <td class="whitespace-nowrap"><a href="https://example.com/article1">Article 1</a></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc1">Google Doc 1</a></td>
+                                        <td class="whitespace-nowrap">John Doe</td>
+                                        <td class="whitespace-nowrap"><span class="bg-green-500 text-success py-1 px-2 rounded-full">Active</span></td>
+                                        <td class="whitespace-nowrap">Tutorial</td>
+                                        <td class="whitespace-nowrap">
+                                            <div class="text-center">
+                                                <div class="dropdown inline-block" data-tw-placement="bottom-start"> <button class="dropdown-toggle btn btn-primary  mr-1 mb-2"
+                                                        aria-expanded="false" data-tw-toggle="dropdown">Option<i data-lucide="chevron-down"
+                                                            class="w-4 h-4 ml-2"></i>  </button>
+                                                            <div class="dropdown-menu w-48">
+                                                                <ul class="dropdown-content">
+                                                                    <li> <a href="https://example.com/dummy-view-page" target="_blank" class="dropdown-item"> <i data-lucide="eye" class="w-4 h-4 mr-2"></i> View </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete </a> </li>
+                                                                </ul>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="whitespace-nowrap">Data Science</td>
+                                        <td class="whitespace-nowrap"><a href="https://example.com/article2">Article 2</a></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc2">Google Doc 2</a></td>
+                                        <td class="whitespace-nowrap">Jane Smith</td>
+                                        <td class="whitespace-nowrap"><span class="bg-yellow-500 text-warning py-1 px-2 rounded-full">Pending</span></td>
+                                        <td class="whitespace-nowrap">Guide</td>
+                                        <td class="whitespace-nowrap">
+                                            <div class="text-center">
+                                                <div class="dropdown inline-block" data-tw-placement="bottom-start"> <button class="dropdown-toggle btn btn-primary  mr-1 mb-2"
+                                                        aria-expanded="false" data-tw-toggle="dropdown">Option<i data-lucide="chevron-down"
+                                                            class="w-4 h-4 ml-2"></i>  </button>
+                                                            <div class="dropdown-menu w-48">
+                                                                <ul class="dropdown-content">
+                                                                    <li> <a href="https://example.com/dummy-view-page" target="_blank" class="dropdown-item"> <i data-lucide="eye" class="w-4 h-4 mr-2"></i> View </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete </a> </li>
+                                                                </ul>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="whitespace-nowrap">Machine Learning</td>
+                                        <td class="whitespace-nowrap"><a href="https://example.com/article3">Article 3</a></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc3">Google Doc 3</a></td>
+                                        <td class="whitespace-nowrap">Emily Johnson</td>
+                                        <td class="whitespace-nowrap"><span class="bg-green-500 text-success py-1 px-2 rounded-full">Active</span></td>
+                                        <td class="whitespace-nowrap">Tutorial</td>
+                                        <td class="whitespace-nowrap">
+                                            <div class="text-center">
+                                                <div class="dropdown inline-block" data-tw-placement="bottom-start"> <button class="dropdown-toggle btn btn-primary  mr-1 mb-2"
+                                                        aria-expanded="false" data-tw-toggle="dropdown">Option<i data-lucide="chevron-down"
+                                                            class="w-4 h-4 ml-2"></i>  </button>
+                                                            <div class="dropdown-menu w-48">
+                                                                <ul class="dropdown-content">
+                                                                    <li> <a href="https://example.com/dummy-view-page" target="_blank" class="dropdown-item"> <i data-lucide="eye" class="w-4 h-4 mr-2"></i> View </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete </a> </li>
+                                                                </ul>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="whitespace-nowrap">UI/UX Design</td>
+                                        <td class="whitespace-nowrap"><a href="https://example.com/article4">Article 4</a></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc4">Google Doc 4</a></td>
+                                        <td class="whitespace-nowrap">Michael Smith</td>
+                                        <td class="whitespace-nowrap"><span class="bg-red-500 text-danger py-1 px-2 rounded-full">Inactive</span></td>
+                                        <td class="whitespace-nowrap">Guide</td>
+                                        <td class="whitespace-nowrap">
+                                            <div class="text-center">
+                                                <div class="dropdown inline-block" data-tw-placement="bottom-start"> <button class="dropdown-toggle btn btn-primary  mr-1 mb-2"
+                                                        aria-expanded="false" data-tw-toggle="dropdown">Option<i data-lucide="chevron-down"
+                                                            class="w-4 h-4 ml-2"></i>  </button>
+                                                            <div class="dropdown-menu w-48">
+                                                                <ul class="dropdown-content">
+                                                                    <li> <a href="https://example.com/dummy-view-page" target="_blank" class="dropdown-item"> <i data-lucide="eye" class="w-4 h-4 mr-2"></i> View </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete </a> </li>
+                                                                </ul>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="whitespace-nowrap">Digital Marketing</td>
+                                        <td class="whitespace-nowrap"><a href="https://example.com/article5">Article 5</a></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc5">Google Doc 5</a></td>
+                                        <td class="whitespace-nowrap">Sarah Johnson</td>
+                                        <td class="whitespace-nowrap"><span class="bg-green-500 text-success py-1 px-2 rounded-full">Active</span></td>
+                                        <td class="whitespace-nowrap">Guide</td>
+                                        <td class="whitespace-nowrap">
+                                            <div class="text-center">
+                                                <div class="dropdown inline-block" data-tw-placement="bottom-start"> <button class="dropdown-toggle btn btn-primary  mr-1 mb-2"
+                                                        aria-expanded="false" data-tw-toggle="dropdown">Option<i data-lucide="chevron-down"
+                                                            class="w-4 h-4 ml-2"></i>  </button>
+                                                            <div class="dropdown-menu w-48">
+                                                                <ul class="dropdown-content">
+                                                                    <li> <a href="https://example.com/dummy-view-page" target="_blank" class="dropdown-item"> <i data-lucide="eye" class="w-4 h-4 mr-2"></i> View </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete </a> </li>
+                                                                </ul>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="whitespace-nowrap">E-commerce</td>
+                                        <td class="whitespace-nowrap"><a href="https://example.com/article6">Article 6</a></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc6">Google Doc 6</a></td>
+                                        <td class="whitespace-nowrap">Alex Davis</td>
+                                        <td class="whitespace-nowrap"><span class="bg-green-500 text-success py-1 px-2 rounded-full">Active</span></td>
+                                        <td class="whitespace-nowrap">Tutorial</td>
+                                        <td class="whitespace-nowrap">
+                                            <div class="text-center">
+                                                <div class="dropdown inline-block" data-tw-placement="bottom-start"> <button class="dropdown-toggle btn btn-primary  mr-1 mb-2"
+                                                        aria-expanded="false" data-tw-toggle="dropdown">Option<i data-lucide="chevron-down"
+                                                            class="w-4 h-4 ml-2"></i>  </button>
+                                                            <div class="dropdown-menu w-48">
+                                                                <ul class="dropdown-content">
+                                                                    <li> <a href="https://example.com/dummy-view-page" target="_blank" class="dropdown-item"> <i data-lucide="eye" class="w-4 h-4 mr-2"></i> View </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit </a> </li>
+                                                                    <li> <a href="#" target="_blank" class="dropdown-item"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete </a> </li>
+                                                                </ul>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                                </table>    
+                                </div>
                     </div>
                 </div>
                 <!-- END: HTML Table Data -->
@@ -558,44 +713,26 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="dist/js/app.js"></script>
         <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
         <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.0.11/js/tabulator.min.js"></script>
-        <script>
-            const tableData = [
-              {
-                id: 1,
-                keyword: "Tabulator.js",
-                articleLink: "https://example.com/article1",
-                googleDocLink: "https://docs.google.com/document/d/12345",
-                assignedTo: "John Doe",
-                status: "In Progress",
-                type: "Tutorial",
-              },
-              {
-                id: 2,
-                keyword: "Web Development",
-                articleLink: "https://example.com/article2",
-                googleDocLink: "https://docs.google.com/document/d/67890",
-                assignedTo: "Jane Smith",
-                status: "Completed",
-                type: "Guide",
-              },
-              // ... Add more data
-            ];
-        
-            const table = new Tabulator("#data-table", {
-              data: tableData,
-              layout: "fitColumns",
-              columns: [
-                { title: "Keyword Phrase", field: "keyword", sorter: "string" },
-                { title: "Article Link", field: "articleLink", formatter: "link", formatterParams: { target: "_blank" } },
-                { title: "Google Doc Link", field: "googleDocLink", formatter: "link", formatterParams: { target: "_blank" } },
-                { title: "Assigned To", field: "assignedTo" },
-                { title: "Status", field: "status" },
-                { title: "Type", field: "type" },
-                { title: "Action", formatter: "buttonCross", width: 80, cellClick: function(e, cell) { alert("Delete clicked for ID: " + cell.getRow().getData().id); } }
-              ],
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.tailwindcss.min.js"></script>
+    <!-- END: JS Assets-->
+    <style>
+        /* Add space below the "Show entries" dropdown */
+        div.dataTables_wrapper div.dataTables_length {
+            margin-bottom: 20px; /* Adjust the value to control spacing */
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#data-table').DataTable({
+                searching: false, // Disable search feature
+                buttons: [ 'copy', 'excel', 'pdf', 'print' ]
             });
-          </script>
+        });
+    </script>
         <!-- END: JS Assets-->
     </body>
 </html>

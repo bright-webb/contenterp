@@ -526,26 +526,81 @@ License: You must have a valid license purchased only from themeforest(the above
                 <!-- BEGIN: HTML Table Data -->
                 <div class="intro-y box p-5 mt-5">
                     <div class="flex flex-col sm:flex-row sm:items-end xl:items-start">
-                        <form id="tabulator-html-filter-form" class="xl:flex sm:mr-auto">
+                        <form id="filter-form" class="xl:flex sm:mr-auto">
                             <div class="sm:flex items-center sm:mr-4 mt-2 xl:mt-0">
-                              <label class="w-12 flex-none xl:w-auto xl:flex-initial mr-2">Filter</label>
-                              <select id="tabulator-html-filter-value" class="border border-gray-300 rounded px-2 py-1">
-                                <option value="">All</option>
-                                <option value="write">Write</option>
-                                <option value="graphic designer">Graphic Designer</option>
-                                <option value="editor">Editor</option>
-                              </select>
+                                <label class="w-12 flex-none xl:w-auto xl:flex-initial mr-2">Filter</label>
+                                <select id="html-filter-value" class="border border-gray-300 rounded px-2 py-1">
+                                    <option value="">All</option>
+                                    <option value="writer">Writer</option>
+                                    <option value="graphic designer">Graphic Designer</option>
+                                    <option value="editor">Editor</option>
+                                </select>
                             </div>
-                            <div class="mt-2 xl:mt-0">
-                              <button id="tabulator-html-filter-go" type="button" class="btn btn-primary w-full sm:w-16">Go</button>
-                            </div>
-                          </form>
+                           
+                        </form>
                        <br><br>
                        <br><br>
                     </div>
                     <div class="overflow-x-auto scrollbar-hidden">
-                        
-                        <div id="workspace-table"></div>
+                        <div class="overflow-x-auto">
+                            <table class="table table-bordered table-hover" id="data-table">
+                                <thead>
+                                    <tr>
+                                        <th class="whitespace-nowrap">Member</th>
+                                        <th class="whitespace-nowrap">Role</th>
+                                        <th class="whitespace-nowrap">Keyword Phrase</th>
+                                        <th class="whitespace-nowrap">Started</th>
+                                        <th class="whitespace-nowrap">Deadline</th>
+                                        <th class="whitespace-nowrap">Status</th>
+                                        <th class="whitespace-nowrap">Google Doc Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Row 1 -->
+                                    <tr>
+                                        <td class="whitespace-nowrap">Kate Winslet</td>
+                                        <td class="whitespace-nowrap">Software Engineer</td>
+                                        <td class="whitespace-nowrap">Web Development</td>
+                                        <td class="whitespace-nowrap">2023-08-01</td>
+                                        <td class="whitespace-nowrap">2023-09-15</td>
+                                        <td class="whitespace-nowrap"><span class="bg-green-500 text-success py-1 px-2 rounded-full">Active</span></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc1">Google Doc 1</a></td>
+                                    </tr>
+                                    <!-- Repeat the above structure for each row -->
+                                    <tr>
+                                        <td class="whitespace-nowrap">Kate Winslet</td>
+                                        <td class="whitespace-nowrap">Writer</td>
+                                        <td class="whitespace-nowrap">Web Development</td>
+                                        <td class="whitespace-nowrap">2023-08-01</td>
+                                        <td class="whitespace-nowrap">2023-09-15</td>
+                                        <td class="whitespace-nowrap"><span class="bg-green-500 text-success py-1 px-2 rounded-full">Active</span></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc1">Google Doc 1</a></td>
+                                    </tr>
+                                
+                                    <!-- Row 2 -->
+                                    <tr>
+                                        <td class="whitespace-nowrap">Johnny Depp</td>
+                                        <td class="whitespace-nowrap">Editor</td>
+                                        <td class="whitespace-nowrap">Data Science</td>
+                                        <td class="whitespace-nowrap">2023-07-15</td>
+                                        <td class="whitespace-nowrap">2023-08-30</td>
+                                        <td class="whitespace-nowrap"><span class="bg-yellow-500 text-warning py-1 px-2 rounded-full">Pending</span></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc2">Google Doc 2</a></td>
+                                    </tr>
+                                
+                                    <!-- Row 3 -->
+                                    <tr>
+                                        <td class="whitespace-nowrap">Robert De Niro</td>
+                                        <td class="whitespace-nowrap">Designer</td>
+                                        <td class="whitespace-nowrap">Machine Learning</td>
+                                        <td class="whitespace-nowrap">2023-08-10</td>
+                                        <td class="whitespace-nowrap">2023-10-05</td>
+                                        <td class="whitespace-nowrap"><span class="bg-green-500 text-success py-1 px-2 rounded-full">Active</span></td>
+                                        <td class="whitespace-nowrap"><a href="https://docs.google.com/doc3">Google Doc 3</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <!-- END: HTML Table Data -->
@@ -558,52 +613,46 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
         <script src="dist/js/app.js"></script>
-        <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
-        <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.0.11/js/tabulator.min.js"></script>
-        <script>
-          const workspaceData = [
-      {
-        member: "John Doe",
-        role: "Developer",
-        keyword: "Best Bars in Alamaba",
-        started: "2023-08-01",
-        deadline: "2023-08-15",
-        status: "In Progress",
-        googleDoc: "https://docs.google.com/document/d/12345"
-      },
-      // ... Add more data entries ...
-    ];
-
-    const workspaceTable = new Tabulator("#workspace-table", {
-      data: workspaceData,
-      layout: "fitColumns",
-      placeholder: "No data available",
-      columns: [
-        { title: "Member", field: "member" },
-        { title: "Role", field: "role" },
-        { title: "Keyword Phrase", field: "keyword" },
-        { title: "Started", field: "started" },
-        { title: "Deadline", field: "deadline" },
-        { title: "Status", field: "status" },
-        { title: "Google Doc Link", field: "googleDoc", formatter: "link", formatterParams: { labelField: "googleDoc", target: "_blank" } }
-      ],
-      initialSort: [{ column: "started", dir: "asc" }], // Sort by "Started" column ascending
-      height: "500px", // Set a fixed height for the table
-      pagination: "local", // Enable pagination
-      paginationSize: 10, // Number of rows per page
-    });
-
-    // Search button event listener
-    document.getElementById("tabulator-html-filter-go").addEventListener("click", function () {
-      const filterValue = document.getElementById("tabulator-html-filter-value").value;
-      if (filterValue === "") {
-        workspaceTable.clearFilter();
-      } else {
-        workspaceTable.setFilter("role", "=", filterValue);
-      }
-    });
-          </script>
+ 
         <!-- END: JS Assets-->
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+        <!-- DataTables -->
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/dataTables.tailwindcss.min.js"></script>
+        <!-- END: JS Assets-->
+        <style>
+            /* Add space below the "Show entries" dropdown */
+            div.dataTables_wrapper div.dataTables_length {
+                margin-bottom: 20px; /* Adjust the value to control spacing */
+                display: none;
+            }
+
+           .dataTables_filter.custom-search{
+            display: none;
+           }
+        </style>
+        <script>
+            $(document).ready(function () {
+                var table = $('#data-table').DataTable();
+
+              // Apply custom styling to filter and table
+            $('div.dataTables_wrapper div.dataTables_filter').addClass('custom-search');
+            $('div.dataTables_wrapper').addClass('custom-table');
+
+            // Apply filter functionality
+            $('#html-filter-value').on('change', function () {
+                var value = $(this).val();
+                table.column(1).search(value).draw(); // Adjust the column index as needed
+            });
+
+            // Apply filter using the "Go" button
+            $('#tabulator-html-filter-go').on('click', function () {
+                var value = $('#html-filter-value').val();
+                table.column(1).search(value).draw(); // Adjust the column index as needed
+            });
+
+        })
+        </script>
     </body>
 </html>
